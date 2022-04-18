@@ -1,10 +1,8 @@
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name : API-based-webapp
 
->The JavaScript capstone project is about building your web application based on an external API. We will select an API that provides data about a topic that we like and then build the webapp around it.!You can find project at https://amrendrakind.github.io/API-based-webapp/
-
+> The JavaScript capstone project is about building your web application based on an external API. We will select an API that provides data about a topic that we like and then build the webapp around it.!You can find project at https://amrendrakind.github.io/API-based-webapp/
 
 ## Built With
 
@@ -14,35 +12,34 @@
 - GitFlow
 - Linters
 - Webpack
+- Jest
 
-
-## Live Demo (Link for My ToDoList Project)
+## Live Demo (Link for My API-based-webapp Project)
 
 [Live Demo Link](https://amrendrakind.github.io/API-based-webapp)
 
-
 ## Development set up
 
-Clone Repository  using 
-`git clone git@github.com:amrendrakind/API-based-webapp.git` 
+Clone Repository using
+`git clone git@github.com:amrendrakind/API-based-webapp.git`
 
-OR  using HTTPS
+OR using HTTPS
 
-`git clone https://github.com/amrendrakind/API-based-webapp.git` 
+`git clone https://github.com/amrendrakind/API-based-webapp.git`
 
 move into project directory
 
 `cd API-based-webapp`
 
-Install  Project dependancies using `NPM` 
+Install Project dependancies using `NPM`
 
 `npm install`
 
-build with the command 
+build with the command
 
 `npm run build`
 
-launch project locally with 
+launch project locally with
 
 `npm start`
 
@@ -59,7 +56,6 @@ launch project locally with
 - GitHub: [@githubhandle](https://github.com/amrendrakind)
 - Twitter: [@twitterhandle](https://twitter.com/amrendrak_)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/amrendraakumar)
-
 
 ## 🤝 Contributing
 
