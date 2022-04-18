@@ -1,3 +1,97 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #e0e0e0;
+  color: #1d1d1d;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 200px;
+  font-size: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+nav {
+  width: 40%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #006;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.show {
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding-bottom: 15px;
+}
+
+.poster {
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.top {
+  display: flex;
+  margin: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like {
+  font-size: 15px;
+}
+
+.counter {
+  font-size: 10px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.options {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.options button {
+  width: 40%;
+  padding: 5px;
+  border-radius: 10px;
 }
