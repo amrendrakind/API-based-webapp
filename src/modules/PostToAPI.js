@@ -10,7 +10,7 @@ class LikeCounter {
       },
     })
       .then((response) => response.text())
-      .then((text) => console.log(text));
+      // .then((text) => console.log(text));
   }
 }
 
