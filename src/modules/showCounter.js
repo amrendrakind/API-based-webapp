@@ -6,7 +6,7 @@ const showCounter = (value) => {
   }
   const number = count;
   number.innerHTML = value.length;
-  return number;
+  return value.length;
 };
 
 export default showCounter;

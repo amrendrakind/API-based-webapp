@@ -5,7 +5,7 @@ import showCounter from './showCounter.js';
 
 const displayShows = async (shows) => {
   shows = await loadShows();
-  const section = shows.slice(0, 9);
+  const section = shows.slice(0, 6);
   let info = '';
   section.forEach((show) => {
     info += `
