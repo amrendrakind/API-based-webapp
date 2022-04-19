@@ -18,7 +18,7 @@ describe('update the counter based on number of cards', () => {
     expect(showCounter(array)).toEqual(null);
   });
 
-  it('updates the attribute of the tag p', () => {
+  it('updates the innerHTML of count', () => {
     const array = [1, 2, 3, 4, 5];
     expect(showCounter(array)).toEqual(count.innerHTML = 5);
   });
