@@ -1,5 +1,6 @@
 import displayShows from './displayShows.js';
-import likeCounter from './postToAPI.js';
+// import likeCounter from './postToAPI.js';
+import likeCounter from '../modules/postToAPI.js';
 
 const likes = async () => {
   await displayShows();
