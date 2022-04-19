@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: rgb(12, 12, 32);
   color: #1d1d1d;
 }
@@ -14,9 +14,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 200px;
+  padding: 3px 100px;
   font-size: 20px;
-  background-color: #999;
+  background-color: #ddd;
 }
 
 .logo {
@@ -28,8 +28,7 @@ header {
 }
 
 nav {
-  width: 40%;
-  border: 1px solid #000;
+  width: 50%;
   display: flex;
   justify-content: space-around;
   padding: 15px;
@@ -40,6 +39,15 @@ nav {
 nav a {
   text-decoration: none;
   color: #fff;
+}
+
+.showCounter {
+  display: flex;
+}
+
+#count {
+  color: #fa0;
+  padding-left: 10px;
 }
 
 .container {
@@ -76,17 +84,17 @@ nav a {
   color: #900;
   font-size: 15px;
   cursor: pointer;
-  transition: transform 500;
+  transition: transform 0.5s;
   animation: heart 1s ease-in-out;
 }
 
 @keyframes heart {
   25% {
-    transform: rotate(-45deg)
+    transform: rotate(-45deg);
   }
 
   75% {
-    transform: rotate(45deg)
+    transform: rotate(45deg);
   }
 }
 
@@ -114,4 +122,13 @@ nav a {
   width: 40%;
   padding: 5px;
   border-radius: 10px;
+  background: #006;
+  color: #eee;
+}
+
+footer {
+  background-color: #ddd;
+  padding: 30px 50px;
+  color: #005;
+  font-size: 20px;
 }

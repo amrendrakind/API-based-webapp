@@ -1,8 +1,4 @@
 import './style.css';
-import img from './modules/logo.js';
-import displayShows from './modules/displayShows.js';
-import likes from './modules/likeEvent.js';
+import load from './modules/load.js';
 
-displayShows();
-img;
-likes();
+load();
