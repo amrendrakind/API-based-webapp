@@ -1,2 +1,2 @@
-const intro = document.getElementById('container')
+const intro = document.getElementById('container');
 export default intro;

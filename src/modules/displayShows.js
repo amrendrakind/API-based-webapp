@@ -1,13 +1,13 @@
 import intro from './variables.js';
-import loadShows from "./showsFromAPI.js";
+import loadShows from './showsFromAPI.js';
 import updateLikes from './updateLikes.js';
 
 const displayShows = async (shows) => {
   shows = await loadShows();
-	const section = shows.slice(0,12);
-	let info = '';
-	section.forEach(show => {
-		info += `
+  const section = shows.slice(0, 12);
+  let info = '';
+  section.forEach((show) => {
+    info += `
 			<div class="show">
 				<img class="poster" src="${show.image.medium}">
 				<div class="top">
@@ -22,10 +22,10 @@ const displayShows = async (shows) => {
 					<button class="reservation">Reservation</button>
 				</div>
 			</div>
-		`
-	});
-	intro.innerHTML = info;
-	updateLikes();
-}
+		`;
+  });
+  intro.innerHTML = info;
+  updateLikes();
+};
 
 export default displayShows;
