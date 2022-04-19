@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box;\\n}\\n\\nbody {\\n  font-family: 'Montserrat', sans-serif;\\n  background: #e0e0e0;\\n  color: #1d1d1d;\\n}\\n\\nheader {\\n  display: flex;\\n  justify-content: space-between;\\n  align-items: center;\\n  margin: 40px 200px;\\n  font-size: 20px;\\n}\\n\\n.logo {\\n  width: 100px;\\n}\\n\\n.logo img {\\n  width: 100%;\\n}\\n\\nnav {\\n  width: 40%;\\n  border: 1px solid #000;\\n  display: flex;\\n  justify-content: space-around;\\n  padding: 15px;\\n  border-radius: 10px;\\n  background-color: #006;\\n}\\n\\nnav a {\\n  text-decoration: none;\\n  color: #fff;\\n}\\n\\n.container {\\n  width: 90%;\\n  max-width: 1000px;\\n  margin: 40px auto 100px auto;\\n  display: grid;\\n  grid-template-columns: repeat(3, 1fr);\\n  gap: 50px;\\n}\\n\\n.show {\\n  text-align: center;\\n  border: 1px solid #000;\\n  border-radius: 15px;\\n  padding-bottom: 15px;\\n}\\n\\n.poster {\\n  width: 90%;\\n  margin-top: 15px;\\n  margin-bottom: 10px;\\n  border-radius: 15px;\\n}\\n\\n.top {\\n  display: flex;\\n  margin: 0 15px;\\n  justify-content: space-between;\\n  align-items: center;\\n}\\n\\n.like {\\n  font-size: 15px;\\n}\\n\\n.counter {\\n  font-size: 10px;\\n}\\n\\n.title {\\n  font-size: 16px;\\n  font-weight: 600;\\n}\\n\\n.options {\\n  margin-top: 10px;\\n  display: flex;\\n  justify-content: space-evenly;\\n}\\n\\n.options button {\\n  width: 40%;\\n  padding: 5px;\\n  border-radius: 10px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://api-based-webapp/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box;\\n}\\n\\nbody {\\n  font-family: 'Montserrat', sans-serif;\\n  background: rgb(12, 12, 32);\\n  color: #1d1d1d;\\n}\\n\\nheader {\\n  display: flex;\\n  justify-content: space-between;\\n  align-items: center;\\n  padding: 15px 200px;\\n  font-size: 20px;\\n  background-color: #999;\\n}\\n\\n.logo {\\n  width: 120px;\\n}\\n\\n.logo img {\\n  width: 100%;\\n}\\n\\nnav {\\n  width: 40%;\\n  border: 1px solid #000;\\n  display: flex;\\n  justify-content: space-around;\\n  padding: 15px;\\n  border-radius: 10px;\\n  background-color: #006;\\n}\\n\\nnav a {\\n  text-decoration: none;\\n  color: #fff;\\n}\\n\\n.container {\\n  width: 90%;\\n  max-width: 1000px;\\n  margin: 40px auto 100px auto;\\n  display: grid;\\n  grid-template-columns: repeat(3, 1fr);\\n  gap: 50px;\\n}\\n\\n.show {\\n  text-align: center;\\n  background-color: #eee;\\n  border-radius: 15px;\\n  padding-bottom: 15px;\\n}\\n\\n.poster {\\n  width: 90%;\\n  margin-top: 15px;\\n  margin-bottom: 10px;\\n  border-radius: 15px;\\n}\\n\\n.top {\\n  display: flex;\\n  margin: 0 15px;\\n  justify-content: space-between;\\n  align-items: center;\\n}\\n\\n.like {\\n  color: #900;\\n  font-size: 15px;\\n  cursor: pointer;\\n  transition: transform 500;\\n  animation: heart 1s ease-in-out;\\n}\\n\\n@keyframes heart {\\n  25% {\\n    transform: rotate(-45deg)\\n  }\\n\\n  75% {\\n    transform: rotate(45deg)\\n  }\\n}\\n\\n.like:hover {\\n  transform: scale(1.3);\\n}\\n\\n.counter {\\n  font-size: 10px;\\n  color: #900;\\n}\\n\\n.title {\\n  font-size: 16px;\\n  font-weight: 600;\\n}\\n\\n.options {\\n  margin-top: 10px;\\n  display: flex;\\n  justify-content: space-evenly;\\n}\\n\\n.options button {\\n  width: 40%;\\n  padding: 5px;\\n  border-radius: 10px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://api-based-webapp/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,7 +116,97 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconst intro = document.getElementById('container');\n\nclass LikeCounter {\n  constructor() {\n    this.array = [];\n    this.data = {};\n  }\n\n  newLike(item_id) {\n    this.data = { item_id, likes };\n    this.array.push(this.data);\n  }\n}\n\nconst likeCounter = new LikeCounter();\n\n// Get data from the shows API ////\nconst loadShows = async () => {\n  const answer = await fetch('https://api.tvmaze.com/shows');\n  const data = await answer.json();\n  return data;\n};\n\n// Load the shows info in the app //\nconst displayShows = async (shows) => {\n  shows = await loadShows();\n  const section = shows.slice(0, 18);\n  let info = '';\n  section.forEach((show) => {\n    info += `\n\t\t\t<div class=\"show\">\n\t\t\t\t<img class=\"poster\" src=\"${show.image.medium}\">\n\t\t\t\t<div class=\"top\">\n\t\t\t\t\t<h3 class=\"title\">${show.name}</h3>\n\t\t\t\t\t<div class=\"likes\">\n            <span id=\"${show.id}\" class=\"like material-icons-outlined\">favorite</span>\n\t\t\t\t\t\t<p class=\"counter\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"options\">\n\t\t\t\t\t<button class=\"comment\">Comment</button>\n\t\t\t\t\t<button class=\"reservation\">Reservation</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t`;\n  });\n  intro.innerHTML = info;\n};\n\ndisplayShows();\n\n//# sourceURL=webpack://api-based-webapp/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_logo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/logo.js */ \"./src/modules/logo.js\");\n/* harmony import */ var _modules_displayShows_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/displayShows.js */ \"./src/modules/displayShows.js\");\n/* harmony import */ var _modules_likeEvent_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/likeEvent.js */ \"./src/modules/likeEvent.js\");\n\n\n\n\n\n(0,_modules_displayShows_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n_modules_logo_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\n(0,_modules_likeEvent_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n//# sourceURL=webpack://api-based-webapp/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/PostToAPI.js":
+/*!**********************************!*\
+  !*** ./src/modules/PostToAPI.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass LikeCounter {\n  newLike(item_id) {\n    fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WXzERyUj1Xacp8cuF1ms/likes', {\n      method: 'POST',\n      body: JSON.stringify({\n        item_id,\n      }),\n      headers: {\n        'Content-type': 'application/json; charset=UTF-8',\n      },\n    })\n      .then((response) => response.text())\n      .then((text) => console.log(text));\n  }\n}\n\nconst likeCounter = new LikeCounter();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (likeCounter);\n\n//# sourceURL=webpack://api-based-webapp/./src/modules/PostToAPI.js?");
+
+/***/ }),
+
+/***/ "./src/modules/displayShows.js":
+/*!*************************************!*\
+  !*** ./src/modules/displayShows.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _variables_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./variables.js */ \"./src/modules/variables.js\");\n/* harmony import */ var _showsFromAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./showsFromAPI.js */ \"./src/modules/showsFromAPI.js\");\n/* harmony import */ var _updateLikes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./updateLikes.js */ \"./src/modules/updateLikes.js\");\n\n\n\n\nconst displayShows = async (shows) => {\n  shows = await (0,_showsFromAPI_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  const section = shows.slice(0, 12);\n  let info = '';\n  section.forEach((show) => {\n    info += `\n\t\t\t<div class=\"show\">\n\t\t\t\t<img class=\"poster\" src=\"${show.image.medium}\">\n\t\t\t\t<div class=\"top\">\n\t\t\t\t\t<h3 class=\"title\">${show.name}</h3>\n\t\t\t\t\t<div class=\"likes\">\n            <span id=\"${show.id}\" class=\"like material-icons-outlined\">favorite</span>\n\t\t\t\t\t\t<p class=\"counter\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"options\">\n\t\t\t\t\t<button class=\"comment\">Comment</button>\n\t\t\t\t\t<button class=\"reservation\">Reservation</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t`;\n  });\n  _variables_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].innerHTML = info;\n  (0,_updateLikes_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayShows);\n\n//# sourceURL=webpack://api-based-webapp/./src/modules/displayShows.js?");
+
+/***/ }),
+
+/***/ "./src/modules/getLikesFromAPI.js":
+/*!****************************************!*\
+  !*** ./src/modules/getLikesFromAPI.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst getLikesFromAPI = async () => {\n  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WXzERyUj1Xacp8cuF1ms/likes');\n  const result = await response.json();\n  return result;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getLikesFromAPI);\n\n//# sourceURL=webpack://api-based-webapp/./src/modules/getLikesFromAPI.js?");
+
+/***/ }),
+
+/***/ "./src/modules/likeEvent.js":
+/*!**********************************!*\
+  !*** ./src/modules/likeEvent.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _displayShows_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./displayShows.js */ \"./src/modules/displayShows.js\");\n/* harmony import */ var _PostToAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PostToAPI.js */ \"./src/modules/PostToAPI.js\");\n\n\n\nconst likes = async () => {\n  await (0,_displayShows_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  const likes = document.querySelectorAll('.like');\n  likes.forEach((like) => {\n    like.addEventListener('click', (e) => {\n      let counter = parseInt(e.path[1].childNodes[3].innerHTML);\n      if (!counter) {\n        counter = 1;\n      } else {\n        counter += 1;\n      }\n      e.path[1].childNodes[3].innerHTML = counter;\n      const position = parseInt(e.path[0].id);\n      _PostToAPI_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].newLike(position);\n    });\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (likes);\n\n//# sourceURL=webpack://api-based-webapp/./src/modules/likeEvent.js?");
+
+/***/ }),
+
+/***/ "./src/modules/logo.js":
+/*!*****************************!*\
+  !*** ./src/modules/logo.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_movie_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/movie.png */ \"./src/modules/images/movie.png\");\n\n\nconst imgLogo = document.getElementById('imgLogo');\nconst img = imgLogo.attributes.src.value = _images_movie_png__WEBPACK_IMPORTED_MODULE_0__;\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (img);\n\n//# sourceURL=webpack://api-based-webapp/./src/modules/logo.js?");
+
+/***/ }),
+
+/***/ "./src/modules/showsFromAPI.js":
+/*!*************************************!*\
+  !*** ./src/modules/showsFromAPI.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst loadShows = async () => {\n  const answer = await fetch('https://api.tvmaze.com/shows');\n  const data = await answer.json();\n  return data;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadShows);\n\n//# sourceURL=webpack://api-based-webapp/./src/modules/showsFromAPI.js?");
+
+/***/ }),
+
+/***/ "./src/modules/updateLikes.js":
+/*!************************************!*\
+  !*** ./src/modules/updateLikes.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _getLikesFromAPI_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getLikesFromAPI.js */ \"./src/modules/getLikesFromAPI.js\");\n\n\nconst updateLikes = async () => {\n  const likesPosition = document.querySelectorAll('.like');\n  const info = await (0,_getLikesFromAPI_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  likesPosition.forEach((like) => {\n    const getID = parseInt(like.id);\n    info.forEach((value) => {\n      const compare = value.item_id;\n      if (compare === getID) {\n        like.parentElement.childNodes[3].innerHTML = value.likes;\n      }\n    });\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (updateLikes);\n\n//# sourceURL=webpack://api-based-webapp/./src/modules/updateLikes.js?");
+
+/***/ }),
+
+/***/ "./src/modules/variables.js":
+/*!**********************************!*\
+  !*** ./src/modules/variables.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst intro = document.getElementById('container');\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (intro);\n\n//# sourceURL=webpack://api-based-webapp/./src/modules/variables.js?");
+
+/***/ }),
+
+/***/ "./src/modules/images/movie.png":
+/*!**************************************!*\
+  !*** ./src/modules/images/movie.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ef55a60183c37c7d1fbc.png\";\n\n//# sourceURL=webpack://api-based-webapp/./src/modules/images/movie.png?");
 
 /***/ })
 
@@ -171,6 +261,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -185,6 +287,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
