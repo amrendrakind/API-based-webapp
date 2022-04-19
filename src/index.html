@@ -9,21 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
-    <title>Webapp based on API</title>
+    <title>Shows site app</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="./images/movie.png">
+            <a href="#" id="refresh">
+                <img id="imgLogo" src="." alt="movie logo">
+            </a>
         </div>
         <nav>
-            <a href="#">Movies</a>
+            <a href="#" class="showCounter">
+                <p>Movies</p>
+                <p id="count"></p>
+            </a>
             <a href="#">Gender</a>
             <a href="#">Year</a>
         </nav>
     </header>
     <div class="container" id="container"></div>
+    <footer>
+        <p>Created by @amrendrakind & @zkr024</p>
+    </footer>
 </body>
 
 </html>
