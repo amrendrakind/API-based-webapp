@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: rgb(12, 12, 32);
   color: #1d1d1d;
 }
@@ -84,17 +84,17 @@ nav a {
   color: #900;
   font-size: 15px;
   cursor: pointer;
-  transition: transform 500;
+  transition: transform 0.5s;
   animation: heart 1s ease-in-out;
 }
 
 @keyframes heart {
   25% {
-    transform: rotate(-45deg)
+    transform: rotate(-45deg);
   }
 
   75% {
-    transform: rotate(45deg)
+    transform: rotate(45deg);
   }
 }
 
