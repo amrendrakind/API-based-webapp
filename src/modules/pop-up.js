@@ -1,3 +1,8 @@
-import getAPIData from './getAPIData.js';
+import { getLikesFromApi } from './getAPIData.js';
 
-getAPIData();
+const like1 = async () => {
+  const info = await getLikesFromApi();
+//   console.log(info);
+}
+
+export default like1;

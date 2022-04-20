@@ -5,6 +5,10 @@ const uniqueKey = 'WXzERyUj1Xacp8cuF1ms';
 const getLikesFromApi = async () => {
   const getLikeData = await fetch(likesUrl);
   const likeList = await getLikeData.json();
-  console.log(likeList);
+  // console.log('likes are ',likeList);
   return likeList;
+};
+
+export {
+  getLikesFromApi, uniqueKey,
 };
