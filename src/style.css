@@ -134,3 +134,121 @@ footer {
   color: #005;
   font-size: 20px;
 }
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 200ms ease-in-out;
+  z-index: 99;
+  background: rgb(12, 12, 32);
+  padding: 10px;
+  width: 700px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.close-button {
+  cursor: pointer;
+  width: 30px;
+  align-self: flex-end;
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  color: #ddd;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(78, 28, 28, 0.6);
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 10px;
+  height: 500px;
+}
+
+.imgContainer img {
+  border-radius: 15px;
+}
+
+.data,
+.addComment {
+  background-color: #eee;
+  border-radius: 15px;
+}
+
+.data,
+.information {
+  display: flex;
+}
+
+.information {
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.details div,
+.details p {
+  margin-top: 15px;
+}
+
+.addComment {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text,
+#textarea {
+  width: 80%;
+  margin: 10px;
+  border: none;
+  padding: 5px;
+  background: rgb(12, 12, 32);
+  color: #fff;
+  border-radius: 5px;
+}
+
+#textarea {
+  margin-top: 0;
+  height: 100px;
+  resize: none;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+.submit {
+  margin-bottom: 10px;
+  padding: 5px;
+  background: rgb(12, 12, 32);
+  color: #fff;
+}

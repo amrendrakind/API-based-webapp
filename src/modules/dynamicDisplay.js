@@ -50,20 +50,9 @@ generateCard = (data, cardId, cardUniqueId, showImage, showName) => {
 
   container.appendChild(show);
 
-//   <div class="show">
-//    <img class="poster" src="${show.image.medium}">
-//    <div class="top">
-//      <h3 class="title">${show.name}</h3>
-//      <div class="likes">
-//        <span id="${show.id}" class="like material-icons-outlined">favorite</span>
-//        <p class="counter"></p>
-//      </div>
-//    </div>
-//    <div class="options">
-//      <button class="comment">Comment</button>
-//      <button class="reservation">Reservation</button>
-//    </div>
-// </div>
+  commentBtn.addEventListener('click', () => {
+    this.showPopup(data, cardId);
+  });
 }
 
 showPage = async (data) => {
@@ -72,14 +61,76 @@ showPage = async (data) => {
   count.innerHTML = `(${noOfCards})`;
 
   for (let i = 0; i < noOfCards; i += 1) {
-    const cardId = i + 1;
+    const cardId = i;
     const cardUniqueId = data[i].id;
     const showImage = data[i].image.medium;
     const showName = data[i].name;
-    // console.log(showName);
     this.generateCard(data, cardId, cardUniqueId, showImage, showName);
-    // updateLikes();
   }
   updateLikes();
+}
+
+showPopup = (data, cardId) => {
+  console.log('Card ID ', cardId + 1, data[cardId].name, 'Clicked');
+
+  const modal = document.createElement('div');
+  modal.classList.add('modal');
+  const modalContainer = document.getElementById('modalContainer');
+
+  const show = document.createElement('div');
+  show.classList.add('show');
+  const poster = document.createElement('img');
+  poster.classList.add('imgContainer');
+  poster.src = `${data[cardId].image.medium}`;
+  const top = document.createElement('div');
+  top.classList.add('information');
+  const title = document.createElement('h3');
+  title.classList.add('title');
+  title.innerText = `${data[cardId].name}`;
+
+  const genres = document.createElement('h3');
+  genres.classList.add('genres');
+  genres.innerText = `Genres: ${data[cardId].genres}`;
+
+  const language = document.createElement('div');
+  language.classList.add('language');
+  language.innerText = `Language: ${data[cardId].language}`;
+
+  const summary = document.createElement('div');
+  summary.classList.add('summary');
+  summary.innerHTML = `${data[cardId].summary}`;
+
+  const span = document.createElement('span');
+  span.classList.add('like');
+  span.classList.add('material-icons-outlined');
+  span.innerText = 'X';
+  span.setAttribute('id', cardId);
+
+  const counter = document.createElement('p');
+  counter.classList.add('counter');
+
+  const options = document.createElement('div');
+  options.classList.add('options');
+  const commentBtn = document.createElement('button');
+  commentBtn.setAttribute('id', cardId);
+  commentBtn.innerText = 'Comment';
+
+  modal.appendChild(span);
+  modal.appendChild(poster);
+  modal.appendChild(top);
+
+  top.appendChild(title);
+  top.appendChild(genres);
+  top.appendChild(language);
+  top.appendChild(summary);
+
+  show.appendChild(options);
+  options.appendChild(commentBtn);
+
+  modalContainer.appendChild(modal);
+
+  span.addEventListener('click', () => {
+    modalContainer.removeChild(modal);
+  });
 }
 }
