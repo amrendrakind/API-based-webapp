@@ -34,9 +34,6 @@ generateCard = (data, cardId, cardUniqueId, showImage, showName) => {
   const commentBtn = document.createElement('button');
   commentBtn.setAttribute('id', id);
   commentBtn.innerText = 'Comment';
-  const reservationBtn = document.createElement('button');
-  reservationBtn.setAttribute('id', id);
-  reservationBtn.innerText = 'Reservation';
 
   show.appendChild(poster);
   show.appendChild(top);
@@ -49,7 +46,6 @@ generateCard = (data, cardId, cardUniqueId, showImage, showName) => {
 
   show.appendChild(options);
   options.appendChild(commentBtn);
-  options.appendChild(reservationBtn);
 
   container.appendChild(show);
 

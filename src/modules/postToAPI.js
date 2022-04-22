@@ -1,8 +1,8 @@
 /* eslint-disable class-methods-use-this */
 class LikeCounter {
   // eslint-disable-next-line camelcase
-  newLike(item_id) {
-    fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WXzERyUj1Xacp8cuF1ms/likes', {
+  newLike = async (item_id) => {
+    await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WXzERyUj1Xacp8cuF1ms/likes', {
       method: 'POST',
       body: JSON.stringify({
         item_id,
