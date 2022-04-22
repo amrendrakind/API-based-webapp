@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Material+Icons+Outlined");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -141,16 +142,14 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: 200ms ease-in-out;
-  z-index: 99;
+  z-index: 10;
   background: rgb(12, 12, 32);
   padding: 10px;
   width: 700px;
   max-width: 80%;
   display: flex;
   flex-direction: column;
-  overflow: auto;
   border-radius: 15px;
-  color: #fff;
 }
 
 .modal.active {
@@ -175,7 +174,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(78, 28, 28, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   pointer-events: none;
 }
@@ -189,7 +188,6 @@ footer {
   display: flex;
   align-items: center;
   margin: 10px 0 10px 10px;
-  height: 500px;
 }
 
 .imgContainer img {
@@ -197,7 +195,8 @@ footer {
 }
 
 .data,
-.addComment {
+.addComment,
+.postComment {
   background-color: #eee;
   border-radius: 15px;
 }
@@ -218,6 +217,10 @@ footer {
   margin-top: 15px;
 }
 
+.details p {
+  font-size: 13px;
+}
+
 .addComment {
   margin-top: 15px;
   display: flex;
@@ -227,13 +230,13 @@ footer {
 
 #text,
 #textarea {
-  width: 80%;
+  width: 95%;
   margin: 10px;
   border: none;
-  padding: 5px;
+  padding: 10px;
   background: rgb(12, 12, 32);
   color: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 #textarea {
@@ -251,4 +254,44 @@ footer {
   padding: 5px;
   background: rgb(12, 12, 32);
   color: #fff;
+  border-radius: 8px;
+}
+
+.commentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.theCounter {
+  color: #eee;
+  display: flex;
+  margin-top: 10px;
+}
+
+#commentCount {
+  margin-left: 5px;
+}
+
+.postComment {
+  list-style: none;
+  margin: auto;
+  margin-top: 15px;
+  padding: 5px 25px;
+  border-radius: 10px;
+}
+
+.commentList {
+  color: rgb(12, 12, 32);
+  display: flex;
+}
+
+.user {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.date {
+  width: 100px;
 }

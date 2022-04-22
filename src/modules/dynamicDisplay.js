@@ -1,4 +1,7 @@
 import updateLikes from './updateLikes.js';
+import addComment from './addComment.js';
+import showCounter from './showCounter.js';
+import getComments from './getComments.js';
 
 export default class dynamicDisplay {
 generateCard = (data, cardId, cardUniqueId, showImage, showName) => {
@@ -51,14 +54,16 @@ generateCard = (data, cardId, cardUniqueId, showImage, showName) => {
   container.appendChild(show);
 
   commentBtn.addEventListener('click', () => {
-    this.showPopup(data, cardId);
+    this.showCommentPopup(data, cardId);
+    const overlay = document.getElementById('overlay');
+    overlay.classList.add('active');
+    const scrollStop = document.querySelector('body');
+    scrollStop.style.overflow = 'hidden';
   });
 }
 
 showPage = async (data) => {
-  const noOfCards = 9;
-  const count = document.getElementById('count');
-  count.innerHTML = `(${noOfCards})`;
+  const noOfCards = 30;
 
   for (let i = 0; i < noOfCards; i += 1) {
     const cardId = i;
@@ -68,69 +73,100 @@ showPage = async (data) => {
     this.generateCard(data, cardId, cardUniqueId, showImage, showName);
   }
   updateLikes();
+  const show = Promise.resolve(document.querySelectorAll('.show'));
+  showCounter(await show);
 }
 
-showPopup = (data, cardId) => {
-  console.log('Card ID ', cardId + 1, data[cardId].name, 'Clicked');
-
+showCommentPopup = async (data, cardId) => {
   const modal = document.createElement('div');
   modal.classList.add('modal');
   const modalContainer = document.getElementById('modalContainer');
 
-  const show = document.createElement('div');
-  show.classList.add('show');
-  const poster = document.createElement('img');
-  poster.classList.add('imgContainer');
-  poster.src = `${data[cardId].image.medium}`;
-  const top = document.createElement('div');
-  top.classList.add('information');
+  const closeButton = document.createElement('button');
+  closeButton.classList.add('close-button');
+  closeButton.innerHTML = '&times;';
+
+  const dataDiv = document.createElement('div');
+  dataDiv.classList.add('data');
+
+  const imgContainer = document.createElement('div');
+  imgContainer.classList.add('imgContainer');
+
+  const modalImage = document.createElement('img');
+  modalImage.classList.add('modal-image');
+  modalImage.src = `${data[cardId].image.medium}`;
+
+  const Information = document.createElement('div');
+  Information.classList.add('information');
+
   const title = document.createElement('h3');
   title.classList.add('title');
   title.innerText = `${data[cardId].name}`;
 
-  const genres = document.createElement('h3');
-  genres.classList.add('genres');
+  const details = document.createElement('div');
+  details.classList.add('details');
+
+  const genres = document.createElement('div');
   genres.innerText = `Genres: ${data[cardId].genres}`;
 
   const language = document.createElement('div');
-  language.classList.add('language');
   language.innerText = `Language: ${data[cardId].language}`;
 
-  const summary = document.createElement('div');
-  summary.classList.add('summary');
+  const summary = document.createElement('p');
   summary.innerHTML = `${data[cardId].summary}`;
 
-  const span = document.createElement('span');
-  span.classList.add('like');
-  span.classList.add('material-icons-outlined');
-  span.innerText = 'X';
-  span.setAttribute('id', cardId);
+  const commentContainer = document.createElement('div');
+  commentContainer.classList.add('commentContainer');
 
-  const counter = document.createElement('p');
-  counter.classList.add('counter');
+  const theCounter = document.createElement('div');
+  theCounter.id = 'theCounter';
+  theCounter.classList.add('theCounter');
 
-  const options = document.createElement('div');
-  options.classList.add('options');
-  const commentBtn = document.createElement('button');
-  commentBtn.setAttribute('id', cardId);
-  commentBtn.innerText = 'Comment';
+  const comments = document.createElement('div');
 
-  modal.appendChild(span);
-  modal.appendChild(poster);
-  modal.appendChild(top);
+  const commentCount = document.createElement('div');
+  commentCount.id = 'commentCount';
 
-  top.appendChild(title);
-  top.appendChild(genres);
-  top.appendChild(language);
-  top.appendChild(summary);
+  const postComment = document.createElement('ul');
+  postComment.id = 'postComment';
+  postComment.classList.add('postComment');
 
-  show.appendChild(options);
-  options.appendChild(commentBtn);
+  commentContainer.appendChild(theCounter);
+  theCounter.appendChild(comments);
+  theCounter.appendChild(commentCount);
+  commentContainer.appendChild(postComment);
+
+  dataDiv.appendChild(imgContainer);
+  dataDiv.appendChild(Information);
+
+  imgContainer.appendChild(modalImage);
+
+  Information.appendChild(title);
+  Information.appendChild(details);
+  details.appendChild(genres);
+  details.appendChild(language);
+  details.appendChild(summary);
+
+  modal.appendChild(closeButton);
+  modal.appendChild(dataDiv);
+  modal.appendChild(commentContainer);
+  modal.appendChild(addComment(cardId));
 
   modalContainer.appendChild(modal);
-
-  span.addEventListener('click', () => {
+  const allComments = await getComments.getComments(cardId + 1);
+  theCounter.innerText = `Comments(${allComments.length})`;
+  allComments.forEach((comment) => {
+    const liComment = document.createElement('li');
+    liComment.classList.add('liComment');
+    liComment.innerText = `${comment.creation_date} ${comment.username}: ${comment.comment}`;
+    postComment.appendChild(liComment);
+  });
+  closeButton.addEventListener('click', () => {
     modalContainer.removeChild(modal);
+    const overlay = document.getElementById('overlay');
+    overlay.classList.remove('active');
+    const scrollStop = document.querySelector('body');
+    scrollStop.style.overflow = 'scroll';
   });
 }
 }
