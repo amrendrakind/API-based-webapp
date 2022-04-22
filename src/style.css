@@ -147,9 +147,11 @@ footer {
   padding: 10px;
   width: 700px;
   max-width: 80%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
+  overflow: auto;
 }
 
 .modal.active {
