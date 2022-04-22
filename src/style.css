@@ -212,6 +212,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  overflow: auto;
 }
 
 .details div,
