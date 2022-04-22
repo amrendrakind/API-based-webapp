@@ -1,13 +1,13 @@
 import { count } from './variables.js';
 
-const showCounter = async (value) => {
+const showCounter = (value) => {
   if (!value.length) {
     return null;
   }
   const number = count;
   number.innerHTML = `(${value.length})`;
 
-  return number;
+  return value.length;
 };
 
 export default showCounter;
