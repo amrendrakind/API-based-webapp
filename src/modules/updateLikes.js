@@ -9,7 +9,7 @@ const updateLikes = async () => {
     info.forEach((value) => {
       const compare = value.item_id;
       if (compare === getID) {
-        like.parentElement.childNodes[3].innerHTML = value.likes;
+        like.parentElement.childNodes[1].innerHTML = value.likes;
       }
     });
   });
