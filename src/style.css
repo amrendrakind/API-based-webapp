@@ -1,3 +1,297 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgb(12, 12, 32);
+  color: #1d1d1d;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 100px;
+  font-size: 20px;
+  background-color: #ddd;
+}
+
+.logo {
+  width: 120px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #006;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.showCounter {
+  display: flex;
+}
+
+#count {
+  color: #fa0;
+  padding-left: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.show {
+  text-align: center;
+  background-color: #eee;
+  border-radius: 15px;
+  padding-bottom: 15px;
+}
+
+.poster {
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.top {
+  display: flex;
+  margin: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like {
+  color: #900;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  animation: heart 1s ease-in-out;
+}
+
+@keyframes heart {
+  25% {
+    transform: rotate(-45deg);
+  }
+
+  75% {
+    transform: rotate(45deg);
+  }
+}
+
+.like:hover {
+  transform: scale(1.3);
+}
+
+.counter {
+  font-size: 10px;
+  color: #900;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.options {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.options button {
+  width: 40%;
+  padding: 5px;
+  border-radius: 10px;
+  background: #006;
+  color: #eee;
+}
+
+footer {
+  background-color: #ddd;
+  padding: 30px 50px;
+  color: #005;
+  font-size: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background: rgb(12, 12, 32);
+  padding: 10px;
+  width: 700px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.close-button {
+  cursor: pointer;
+  width: 30px;
+  align-self: flex-end;
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  color: #ddd;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 10px;
+}
+
+.imgContainer img {
+  border-radius: 15px;
+}
+
+.data,
+.addComment,
+.postComment {
+  background-color: #eee;
+  border-radius: 15px;
+}
+
+.data,
+.information {
+  display: flex;
+}
+
+.information {
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.details div,
+.details p {
+  margin-top: 15px;
+}
+
+.details p {
+  font-size: 13px;
+}
+
+.addComment {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text,
+#textarea {
+  width: 95%;
+  margin: 10px;
+  border: none;
+  padding: 10px;
+  background: rgb(12, 12, 32);
+  color: #fff;
+  border-radius: 8px;
+}
+
+#textarea {
+  margin-top: 0;
+  height: 100px;
+  resize: none;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+.submit {
+  margin-bottom: 10px;
+  padding: 5px;
+  background: rgb(12, 12, 32);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.commentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.theCounter {
+  color: #eee;
+  display: flex;
+  margin-top: 10px;
+}
+
+#commentCount {
+  margin-left: 5px;
+}
+
+.postComment {
+  list-style: none;
+  margin: auto;
+  margin-top: 15px;
+  padding: 5px 25px;
+  border-radius: 10px;
+}
+
+.commentList {
+  color: rgb(12, 12, 32);
+  display: flex;
+}
+
+.user {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.date {
+  width: 100px;
 }
