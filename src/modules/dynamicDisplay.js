@@ -63,7 +63,7 @@ generateCard = (data, cardId, cardUniqueId, showImage, showName) => {
 }
 
 showPage = async (data) => {
-  const noOfCards = 30;
+  const noOfCards = 12;
 
   for (let i = 0; i < noOfCards; i += 1) {
     const cardId = i;

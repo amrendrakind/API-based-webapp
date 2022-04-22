@@ -18,6 +18,11 @@
 
 [Live Demo Link](https://amrendrakind.github.io/API-based-webapp)
 
+## API Information
+
+- [TV Maze](https://www.tvmaze.com/api) : This API was used for media information
+- [Involment API](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270) :We used this API to store and retrieve likes and comments information.
+
 ## Development set up
 
 Clone Repository using
@@ -42,6 +47,12 @@ build with the command
 launch project locally with
 
 `npm start`
+
+## Jest
+
+run for Testing
+
+`npm test`
 
 ## Author
 
